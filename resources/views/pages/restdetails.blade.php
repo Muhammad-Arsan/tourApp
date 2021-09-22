@@ -1,12 +1,9 @@
   @extends('layouts.app')
-
   @section('content')
 
-
     <div class="container res-details">
-      
-    Restourent Details...
-    <div class="">
+       Restourent Details...
+       <div class="">
         <h3>{{$restourent->name}}</h3>
         <div class="d-flex flex-row">
         <a href="" class="rest-rating"><i class="fa fa-star star-rating"></i>
@@ -43,19 +40,8 @@
         <div class="col-md-3 col-12 d-flex flex-column justify-content-between">
         <img src="{{asset('images/rest1.jpg')}}" class="img-fluid "  width="100%" height="100%">
         <img src="{{asset('images/rest2.jpg')}}" class="img-fluid" width="100%" height="100%">
-        
     </div>  
-          
     </div>
-  <!-- <form>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  </form> -->
-  <!-- <div class="d-flex justify-content-center mt-5">
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">write a comment</button>
-  </div> -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -101,20 +87,6 @@
                     <h4>{{$comment->user->name}}</h4> <span>- {{$comment->created_at}}</span> <br>
                     <p>{{$commnet->body}}</p>
                 </div>
-             
-                <!-- <div class="text-justify darker mt-4 float-right"> <img src="https://i.imgur.com/CFpa3nK.jpg" alt="" class="rounded-circle" width="40" height="40">
-                    <h4>Rob Simpson</h4> <span>- 20 October, 2018</span> <br>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                </div>
-                <div class="comment mt-4 text-justify"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" width="40" height="40">
-                    <h4>Jhon Doe</h4> <span>- 20 October, 2018</span> <br>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                </div> -->
-                <!-- <div class="darker mt-4 text-justify"> <img src="https://i.imgur.com/CFpa3nK.jpg" alt="" class="rounded-circle" width="40" height="40">
-                    <h4>Rob Simpson</h4> <span>- 20 October, 2018</span> <br>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                </div> -->
-                
               </div>
               @endforeach
             <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12">
